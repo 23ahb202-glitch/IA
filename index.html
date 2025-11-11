@@ -1,36 +1,122 @@
-<!DOCTYPE html>
+index.html  構造化　
+
+
+
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" comtent="width=device-width, intial-scale=1">
-    <title>学園祭2025 | シンプルサイト (セマンティック＋レスポンシブ) </title>
-    <meta name="description" content="学園祭2025の概要・タイムテーブル・アクセスを掲載する最小構成のサンプル。セマンティックHTML+モバイルファーストCSS。">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学園祭2025 | シンプルサイト（セマンティック＋レスポンシブ）</title>
+  <meta name="description" content="学園祭2025の概要・タイムテーブル・アクセスを掲載する最小構成のサンプル。セマンティックHTML＋モバイルファーストCSS。">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+  <header>
     <div class="container header-inner">
-        <div class="brand">学園祭2025</div>
-        <nav aria-label="主要ナビゲーション">
-            <ul>
-                <li><a href="#about">概要</a></li>
-                <li><a href="#schedule">タイムテーブル</a></li>
-                <li><a href="#access">アクセス</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+      <div class="brand">学園祭2025</div>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="#about">概要</a></li>
+          <li><a href="#schedule">タイムテーブル</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
-<section class="hero"></section>
-<main>
-    <div class="maincol"> 
-        <section id="about"></section>
-        <section id="schedule"></section>
-        <section id="access"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.779029365501!2d139.71449977579002!3d35.73165262257101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f3f07b76b%3A0x89f2c0ef0e9ee79f!2z5a2m5qCh5rOV5Lq66Zu75rOi5a2m5ZyS5p2x5Lqs6Zu75a2Q5bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sjp!4v1762840941120!5m2!1sja!2sjp" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
-        <a href="https://maps.app.goo.gl/cwcxKmz9LDxEWLxx5"></a>
-        <section id="contact"></section>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h1>シンプル＆構造化 — 最小のレスポンシブテンプレート</h1>
+      <p>セマンティックHTML（header/nav/main/section/aside/footer）と、最小限のモバイルファーストCSSだけで構成。</p>
     </div>
-</main>
-<footer></footer>
+  </section>
+
+
+  <main id="main" class="container">
+    <div class="grid">
+      <div class="maincol">
+        <section id="about">
+          <h2>イベント概要</h2>
+          <p>
+            学園祭2025は、作品展示・ステージ・模擬店などを通して学生の学びを公開するイベントです。<br>
+            このテンプレートは、<strong>意味でタグを選ぶ</strong>／<strong>構造と見た目の分離</strong>を体験するための最小構成です。
+          </p>
+          <figure>
+            <img src="https://placehold.co/800x450" width="800" height="450" alt="学園祭のイメージ（屋外ステージ）">
+            <figcaption>画像はダミーです。実際の写真に差し替えてください。</figcaption>
+          </figure>
+        </section>
+
+
+        <section id="schedule">
+          <h2>タイムテーブル</h2>
+          <table aria-describedby="note">
+            <thead>
+              <tr><th scope="col">時刻</th><th scope="col">内容</th><th scope="col">場所</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10:00</td><td>オープニング</td><td>中庭</td></tr>
+              <tr><td>11:30</td><td>作品展示ツアー</td><td>1号館</td></tr>
+              <tr><td>13:00</td><td>軽音ライブ</td><td>体育館</td></tr>
+              <tr><td>15:00</td><td>表彰式</td><td>大講義室</td></tr>
+            </tbody>
+          </table>
+          <p id="note" class="note">※ 内容・時刻は変更になる場合があります。</p>
+        </section>
+
+
+        <section id="access">
+          <h2>アクセス</h2>
+          <p>〒170-0013 東京都豊島区東池袋３丁目６−１／最寄り：池袋駅 徒歩10分</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.522520327519!2d139.71446697578997!3d35.73176467257097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f3f07b76b%3A0x89f2c0ef0e9ee79f!2z5a2m5qCh5rOV5Lq66Zu75rOi5a2m5ZyS5p2x5Lqs6Zu75a2Q5bCC6ZaA5a2m5qCh!5e1!3m2!1sja!2sjp!4v1762780310661!5m2!1sja!2sjp" width="100%" height="350px"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p><a href="https://www.google.com/maps?ll=35.731765,139.717042&z=16&t=h&hl=ja&gl=JP&mapclient=embed&cid=9940219460535117727" target="_blank">Googleマップで見る</a></p>
+        </section>
+
+
+        <section id="contact">
+          <h2>お問い合わせ</h2>
+          <form action="#" method="post">
+            <p class="field">
+              <label>お名前<br>
+                <input class="input" name="name" type="text" autocomplete="name" required>
+              </label>
+            </p>
+            <p class="field">
+              <label>メールアドレス<br>
+                <input class="input" name="email" type="email" autocomplete="email" required>
+              </label>
+            </p>
+            <p class="field">
+              <label>お問い合わせ内容<br>
+                <textarea class="textarea" name="message" rows="4"></textarea>
+              </label>
+            </p>
+            <p><button class="btn" type="submit">送信</button></p>
+          </form>
+        </section>
+      </div>
+
+
+      <aside aria-label="お知らせ">
+        <h2>お知らせ</h2>
+        <ul class="list">
+          <li>入場無料です</li>
+          <li>混雑時は入場制限を行う場合があります</li>
+          <li>ステージはライブ配信予定です</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+
+  <footer role="contentinfo">
+    <div class="container"><small>&copy; b302 学園祭実行委員会</small></div>
+  </footer>
 </body>
 </html>
+
+
+
